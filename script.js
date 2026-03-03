@@ -127,3 +127,8 @@ if (document.getElementById('particles-js')) {
     retina_detect: false
   });
 }
+// ===== Mobile Menu Toggle =====
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+
