@@ -737,4 +737,36 @@ footer {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+}
+/* ===== Mobile Menu ===== */
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #111;
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
